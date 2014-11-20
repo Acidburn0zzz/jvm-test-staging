@@ -7,5 +7,5 @@ jdk:
 - oraclejdk8
 matrix:
   allow_failures:
-  - oraclejdk7
-  - oraclejdk8
+  - jdk: oraclejdk7
+  - jdk: oraclejdk8
