@@ -10,3 +10,4 @@ matrix:
   allow_failures:
   - jdk: oraclejdk7
   - jdk: oraclejdk8
+after_script: dpkg --get-selections | grep -v deinstall | awk '{ print $1 }'
